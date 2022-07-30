@@ -27,6 +27,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Checkout docs
+        uses: actions/checkout@v3
+        with:
+          ref: docs
+          path: _posts
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
