@@ -33,7 +33,7 @@ jobs:
           ref: docs
           path: _posts
       - run: ls
-      - run: ls ./docs
+      - run: ls ./_posts
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
