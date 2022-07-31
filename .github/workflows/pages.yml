@@ -30,7 +30,7 @@ jobs:
       - name: Checkout jekyll
         uses: actions/checkout@v3
         with:
-          ref: jekyll_template
+          repository: mwsacred/chirpy-starter
       - name: Checkout posts
         uses: actions/checkout@v3
         with:
