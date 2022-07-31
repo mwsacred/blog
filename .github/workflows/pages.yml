@@ -4,7 +4,7 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches: ["posts"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,7 +32,6 @@ jobs:
         with:
           ref: docs
           path: _posts
-      - run: ls -a _posts
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
