@@ -34,8 +34,7 @@ jobs:
         with:
           ref: docs
           path: _posts
-      - run: pwd & ls -a & ls -a jekyll & cat ./jekyll/Gemfile
-      - run: cd jekyll
+      - run: ls -a _posts
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
