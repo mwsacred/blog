@@ -49,6 +49,8 @@ jobs:
       - run: cd jekyll && bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }} -s ../_posts # defaults output to '/_site'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
+        with:
+          path: jekyll/_site/
 
   # Deployment job
   deploy:
