@@ -37,7 +37,7 @@ jobs:
           ref: posts
           path: _posts
       - name: move image directory
-        run: mv _posts/assets assets/img
+        run: mv _posts/assets/blog-img assets/blog-img
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
